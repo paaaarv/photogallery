@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>TK Photography</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <h1>TK Photography</h1>
@@ -10,80 +11,75 @@
           <li><a href="#about">About</a></li>
           <li> <a href="#gallery">Gallery</a></li>
           <li><a href = "#contact">Contact</a></li>
-          <li><a href = "#top">top</a></li>
         </ul>
     </nav>
-    <section>
-    <h2>About</h2>
-    <p>
-        Hello! 
-        I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
-     </p>
-    </section>
-    <section>
-        <h2> Gallery </h2>
-        <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-    </section>
-    <div>
-        <figure>
-            <img src="./images/Chile.png" alt="">
-            <figcaption>Chile, 2001</figcaption>
-        </figure>
-    
-        <figure>
-            <img src="./images/Guatemala.png" alt="">
-            <figcaption>Guatemala, 1997</figcaption>
-        </figure>
-        <figure>
-            <img src="./images/Hawaii.png" alt="">
-            <figcaption>Hawaii, 2010</figcaption>
-        </figure>
-        <figure>
-            <img src="./images/Iran.png" alt="">
-            <figcaption>Iran, 1999</figcaption>
-        </figure>
-        <figure>
-            <img src="./images/Ireland.png" alt="">
-            <figcaption>Ireland, 2012</figcaption>
-        </figure>
-        <figure>
-            <img src="./images/Italy.png" alt="">
-            <figcaption>Italy, 2015</figcaption>
-        </figure>
-        <figure>
-            <img src="./images/Moab-Desert.png" alt="">
-            <figcaption>Moab Desert, 2020</figcaption>
-        </figure>
-        <figure>
-            <img src="./images/Rocky-Mountains.png" alt="">
-            <figcaption>Rocky Mountains, 2009</figcaption>
-        </figure>
-        <figure>
-            <img src="./images/Switzerland.png" alt="">
-            <figcaption>Switzerland, 2014</figcaption>
-        </figure>
-        <figure>
-            <img src="./images/UK.png" alt="">
-            <figcaption>UK, 2005</figcaption>
-        </figure>
-        <figure>
-            <img src="./images/USA.png" alt="">
-            <figcaption>USA, 2021</figcaption>
-        </figure>
-        <figure>
-            <img src="./images/Wyoming.png" alt="">
-            <figcaption>Wyoming, 2021</figcaption>
-        </figure>
-    </div>
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            Hello! <br><br>
+            I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
+        </p>
+            <h2> Gallery </h2>
+            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+        <div id="gallery">
+            <figure>
+                <img src="./images/Chile.png" alt="">
+                <figcaption>Chile, 2001</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="./images/Guatemala.png" alt="">
+                <figcaption>Guatemala, 1997</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/Hawaii.png" alt="">
+                <figcaption>Hawaii, 2010</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/Iran.png" alt="">
+                <figcaption>Iran, 1999</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/Ireland.png" alt="">
+                <figcaption>Ireland, 2012</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/Italy.png" alt="">
+                <figcaption>Italy, 2015</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/Moab-Desert.png" alt="">
+                <figcaption>Moab Desert, 2020</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/Rocky-Mountains.png" alt="">
+                <figcaption>Rocky Mountains, 2009</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/Switzerland.png" alt="">
+                <figcaption>Switzerland, 2014</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/UK.png" alt="">
+                <figcaption>UK, 2005</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/USA.png" alt="">
+                <figcaption>USA, 2021</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/Wyoming.png" alt="">
+                <figcaption>Wyoming, 2021</figcaption>
+            </figure>
+        </div>
 
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
         <p>Please fill out this form and I’ll connect with you soon.</p>
         <form>
-            <label>Your contact information</label>
-            <label>Name </label> <input type="text" value="Your full name">
-            <label>Email</label> <input type="email" value="Enter your email address">
-            <label>Message</label> <textarea placeholder="What can I help you with?"></textarea>
+            <label>Name </label> <input type="text" placeholder="Your full name"><br>
+            <label>Email</label> <input type="email" placeholder="Enter your email address"><br>
+            <label>Message</label> <input type="text" placeholder="What can I help you with?"><br>
             <button type="submit">Submit</button>
         </form>
     </section>

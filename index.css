@@ -1,5 +1,6 @@
 p {
     font-size: 1.25em;
+    padding: 10px;
 }
 figcaption, label, input, small {
     font-size: 1em;
@@ -9,7 +10,175 @@ nav a {
 }
 h1 {
     font-size: 3em;
+    background-color: #ffffff;
+    color: #007d7b;
+    text-transform: uppercase;
+    text-align: center;
 }
+
 h2 {
     font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: #000000;
+    width: 475px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    display: flex;
+    flex: 0 0 70%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+section{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+figure{
+    position: relative;
+}
+figcaption{
+    position: absolute;
+    bottom: 90%;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+figure:first-child figcaption{
+    top: 90%;
+}
+figure:nth-child(3) figcaption{
+    top: 90%;
+}
+figure:nth-child(4) figcaption{
+    color: #000000;
+}
+figure:nth-child(5) figcaption{
+    color: #000000;
+}
+figure:nth-child(6) figcaption{
+    color:#000000;
+    top:90%;
+}
+figure:nth-child(8) figcaption{
+    color: #000000;
+}
+figure:nth-child(9) figcaption{
+    color: #000000;
+}
+figure:nth-child(10) figcaption{
+    color: #000000;
+}
+figure:nth-child(11) figcaption{
+    color: #000000;
+}
+
+form label{
+    display:block;
+    margin-bottom: 1px;
+    padding: 10px;
+    
+}
+label, input{
+    text-align:left;
+    width: 100%;
+}
+input{
+    height: 40px;
+}
+
+input::placeholder{
+    color: #007d7b;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+#contact, footer{
+    background-color: #000000;
+    color:#ffffff;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+button{
+    background-color: #007d7b;
+    height: 40px;
+    width: 50%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 45px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+
+}
+
+footer p {
+    margin-top: 0;
+}
+
+@media screen and (min-width:880px){
+
+    body{
+        width: 880px;
+    }
+
+    div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    figure:nth-of-type(2n+1){
+        margin: 10px 5px 10px 70px ;
+    }
+    figure:nth-of-type(2n){
+        margin: 10px 70px 10px 5px; 
+    }
+}
+
+@media screen and (min-width: 1300px){
+    body{
+        width: 1300px;
+    }
+    div{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+    ul{
+        display: flex;
+        justify-content: right;
+    }
+    li{
+        padding: 10px;
+    }
+   
+    figure{
+        margin: 10px;
+    }
 }
